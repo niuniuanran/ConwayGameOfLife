@@ -1,0 +1,28 @@
+#header{
+    margin: 0 auto;
+    text-align: center;
+    color: #9fa39a;
+    font-size: 2vw;
+    min-font-size: 20px;
+}
+body {
+    font-family: 'Calistoga', cursive;
+    background-color: rgb(20, 30, 27);
+}
+
+#container {
+    width: 40vw;
+    height: 40vw;
+    min-width: 400px;
+    min-height: 400px;
+    border: solid black 2px;
+    margin: auto;
+    display: grid;
+
+}
+
+#cell {
+    border-radius: 5%;
+    background-color: #9fa39a;
+    border: 1px solid floralwhite;
+}
