@@ -40,6 +40,9 @@ body {
     min-width: 600px;
     border: solid var(--active-color) 2px;
     margin: 0 0;
+    display: grid;
+    background-color: var(--warn-color);
+    border-radius: 5px;
 }
 
 #button-container {
@@ -88,4 +91,14 @@ body {
     border-radius: 5%;
     background-color: #9fa39a;
     border: 1px solid floralwhite;
+}
+.cell {
+    border-radius: 4px;
+}
+.alive{
+    background-color: var(--mild-color);
+    border: var(--active-color) 1px solid;
+}
+.dead{
+    background-color: var(--active-color);
 }
