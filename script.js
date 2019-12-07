@@ -3,11 +3,14 @@ function gameMain() {
     const nicePattern = [["7-9", "8-8", "8-10", "9-8", "9-10", "10-9", "10-10"],
         ["1-2", "2-3", "3-1", "3-2", "3-3"],
         ["7-7", "7-12", "8-5", "8-6", "8-8", "8-9", "8-10", "8-11", "8-13", "8-14", "9-7", "9-12"],
-        ["7-9","8-8","8-9","8-10"]];
+        ["7-9", "8-8", "8-9", "8-10"],
+        ["3-5", "3-6", "3-7", "3-11", "3-12", "3-13", "5-3", "5-8", "5-10", "5-15", "6-3", "6-8", "6-10", "6-15", "7-3", "7-8", "7-10", "7-15", "8-5", "8-6", "8-7", "8-11", "8-12", "8-13", "10-5", "10-6", "10-7", "10-11", "10-12", "10-13", "11-3", "11-8", "11-10", "11-15", "12-3", "12-8", "12-10", "12-15", "13-3", "13-8", "13-10", "13-15", "15-5", "15-6", "15-7", "15-11", "15-12", "15-13"],
+        ["9-10", "10-9", "10-11", "11-8", "11-12", "12-9", "12-10", "12-11", "14-7", "14-8", "14-12", "14-13", "15-5", "15-9", "15-11", "15-15", "16-4", "16-5", "16-9", "16-11", "16-15", "16-16", "17-3", "17-9", "17-11", "17-17", "18-4", "18-6", "18-7", "18-9", "18-11", "18-13", "18-14", "18-16"]
+    ];
     let niceIndex = function () {
         let i = -1;
         return function () {
-            if (i < nicePattern.length-1) {
+            if (i < nicePattern.length - 1) {
                 i++;
                 return i;
             } else {
@@ -49,6 +52,7 @@ function gameMain() {
         cellsRunning = false;
         cellRunStop();
     }
+
     function setGo() {
         runButton.innerText = "Stop";
         cellsRunning = true;
@@ -101,8 +105,10 @@ function gameMain() {
         }
         for (let y = 0; y < cellNumY; y++) {
             for (let x = 0; x < cellNumX; x++) {
-                if (newStates[y][x]) {cells[y][x].classList.add("alive"); someThingAlive=true}
-                else cells[y][x].classList.remove("alive");
+                if (newStates[y][x]) {
+                    cells[y][x].classList.add("alive");
+                    someThingAlive = true
+                } else cells[y][x].classList.remove("alive");
             }
         }
         if (!someThingAlive) {
