@@ -94,11 +94,7 @@ body {
 
 
 /* Cell styling */
-#cell {
-    border-radius: 5%;
-    background-color: #9fa39a;
-    border: 1px solid floralwhite;
-}
+
 .cell {
     border-radius: 4px;
     background-color: var(--active-color);
