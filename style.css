@@ -1,7 +1,7 @@
 body {
     font-family: 'Calistoga', cursive;
     --text-color: #F2D8B3;
-    --background-color: rgb(20, 30, 27);
+    --background-color:#75746a;
     --active-color: #Ffd195;
     --warn-color: #de7e44;
     --mild-color: #5d9b84;
@@ -45,48 +45,55 @@ body {
     border-radius: 5px;
 }
 
+
+/* Button styling */
 #button-container {
     position: relative;
 }
 
-.control-button {
-    width: 70px;
+.buttons {
+    width: 90px;
     height: 50px;
     border-radius: 10px;
     border: none;
     font-size: 14px;
     font-family: 'Calistoga', cursive;
     text-align: center;
+    position: relative;
+    left:20px;
+    margin-bottom: 5px;
 }
-.control-button:focus{
+.buttons:focus{
     outline: none;
 }
 
-#start-end {
+.control-button {
     background-color: var(--active-color);
     position: relative;
-    bottom: 200px;
-    left: 20px;
+    bottom: 180px;
     color: var(--warn-color);
 }
-#start-end:hover{
+
+.control-button:hover{
     border: var(--active-color) 2px solid;
     background-color: var(--warn-color);
     color: var(--active-color);
 }
 
-#surprise-me {
+.fun-button {
     background-color: var(--warn-color);
     color: var(--active-color);
     position: relative;
     bottom: 150px;
-    left: 20px;
 }
-#surprise-me:hover{
+.fun-button:hover{
     background-color: var(--active-color);
     color: var(--warn-color);
     border: var(--warn-color) 2px solid;
 }
+
+
+/* Cell styling */
 #cell {
     border-radius: 5%;
     background-color: #9fa39a;
@@ -94,11 +101,9 @@ body {
 }
 .cell {
     border-radius: 4px;
+    background-color: var(--active-color);
 }
 .alive{
     background-color: var(--mild-color);
     border: var(--active-color) 1px solid;
-}
-.dead{
-    background-color: var(--active-color);
 }
