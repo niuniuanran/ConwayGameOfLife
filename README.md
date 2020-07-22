@@ -1,5 +1,5 @@
 # Conway Game of Life
-The classic Conway game of life, basic but lots of fun.
+The classic [Conway game of life](https://www.conwaylife.com/)!
 
 ## Demo
 
