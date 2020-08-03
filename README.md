@@ -13,7 +13,7 @@ The classic [Conway game of life](https://www.conwaylife.com/)!
 ## How to play
 
 ### GitHub Page
-Play [here at the GitHub Page](https://niuniuanran.github.io/GameOfLife/)
+Play [here at the GitHub Page](https://niuniuanran.github.io/ConwayGameOfLife/)
 
 ### Play it locally
 Follow these steps to play the game locally:
